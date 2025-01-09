@@ -1,24 +1,36 @@
-# README
+# Your Better Fortune
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A web application which presents a new fortune cookie fortune. 
 
-Things you may want to cover:
+## Table of Contents
 
-* Ruby version
+- [Installation](#installation)
+- [Usage](#usage)
+- [Acknowledgements](#acknowledgements)
 
-* System dependencies
+## Installation
 
-* Configuration
+Follow the steps below to get your project up and running.
 
-* Database creation
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/haku-c/YourBetterFortuneCookie
+    ```
+2. Navigate into the project directory:
+    ```bash
+    cd fortunecookie
+    ```
 
-* Database initialization
+## Usage
 
-* How to run the test suite
+Start the web server with the below command.
 
-* Services (job queues, cache servers, search engines, etc.)
+```bash
+bin/rails server
+```
 
-* Deployment instructions
+Open http://localhost:3000/
 
-* ...
+## Acknowledgements 
+Thanks to the following resources!
+- https://github.com/reggi/fortune-cookie
