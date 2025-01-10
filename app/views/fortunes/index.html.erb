@@ -1,0 +1,9 @@
+<h1>Fortunes#index</h1>
+<div id="fortunes">
+<% @allfortunes.each do |fortune| %>
+  <p> 
+  <%= link_to "Fortune #{fortune.id}", fortune%>
+  </p>
+<% end %>
+</div>
+
