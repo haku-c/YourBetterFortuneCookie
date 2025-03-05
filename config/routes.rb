@@ -7,4 +7,5 @@ Rails.application.routes.draw do
 
   resources :fortunes
   root "fortunes#index"
+  get "random", to: "fortunes#random"
 end

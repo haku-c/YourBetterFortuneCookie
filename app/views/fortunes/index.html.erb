@@ -1,6 +1,9 @@
 <h1>Fortunes#index</h1>
+<div id="pick_one">
+  <%= button_to "Random", random_path, method: :get%>
+</div>
 <div id="fortunes">
-<% @allfortunes.each do |fortune| %>
+<% @allfortunes.find_each do |fortune| %>
   <p> 
   <%= link_to "Fortune #{fortune.id}", fortune%>
   </p>

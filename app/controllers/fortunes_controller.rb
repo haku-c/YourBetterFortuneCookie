@@ -5,4 +5,7 @@ class FortunesController < ApplicationController
   def show
     @fortune = Fortune.find(params[:id])
   end
+  def random
+    @randfortune = Fortune.find(Fortune.pluck(:id).sample)
+  end
 end
