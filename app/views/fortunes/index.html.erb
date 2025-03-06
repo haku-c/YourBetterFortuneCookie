@@ -1,12 +1,17 @@
-<h1>Fortunes#index</h1>
+<html>
+  <head>
+    <title> Your Better Fortune Cookie </title>
+    <link rel="icon" href="<%= asset_path('fortune_cookie.png') %>" type="image/png">
+  </head>
+<h1>Your Better Fortune</h1>
 <div id="pick_one">
   <%= button_to "Random", random_path, method: :get%>
 </div>
 <div id="fortunes">
 <% @allfortunes.find_each do |fortune| %>
   <p> 
-  <%= link_to "Fortune #{fortune.id}", fortune%>
+  <%= link_to "Fortune #{fortune.id}", fortune %>
   </p>
-<% end %>
+<% end %>  
 </div>
 
